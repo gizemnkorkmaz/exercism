@@ -126,6 +126,6 @@ describe("memoizeTransform", () => {
     expect(memoizedTransform(1, 1)).toEqual([2, 2]);
     expect(memoizedTransform(2, 2)).toEqual([4, 4]);
     expect(memoizedTransform(1, 1)).toEqual([2, 2]);
-    //expect(mockFunction).toBeCalledTimes(3);
+    expect(mockFunction).toBeCalledTimes(3);
   });
 });

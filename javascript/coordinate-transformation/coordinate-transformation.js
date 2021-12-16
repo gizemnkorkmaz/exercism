@@ -68,12 +68,13 @@ export function composeTransform(f, g) {
  *  if the arguments are the same on subsequent calls, or compute a new result if they are different.
  */
 export function memoizeTransform(f) {
-  var cache = {};
+  let cache = {};
   return function () {
     const key = JSON.stringify(arguments);
     if (cache[key]) {
       return cache[key];
     } else {
+      cache = {};
       const val = f.apply(null, arguments);
       cache[key] = val;
       return val;
