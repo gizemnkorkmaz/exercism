@@ -1,6 +1,6 @@
 # Exercism
 
-The repository for exercises I've completed on [Exercism][].
+This repository is for the exercises I've completed on [Exercism][].
 
 [My Profile][]
 
